@@ -11,9 +11,9 @@ inoremap <F7> <esc>:call LoadUltisnips()<cr>a<c-r>=UltiSnips_ExpandSnippet()<cr>
 map <Leader>s :Startify<CR>
 let g:startify_custom_indices = ['a', 'd', 'f', 'l', 'w', 'o', 'm', 'h', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
 let g:startify_bookmarks = [ '$NEOVIM_MY/init.vim']
+"let g:startify_custom_header = []
 let g:startify_files_number        = 8
 let g:startify_enable_special      = 0
-"let g:startify_custom_header = []
 
 let g:startify_session_persistence = 1
 let g:startify_session_autoload    = 1
