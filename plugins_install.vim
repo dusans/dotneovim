@@ -28,9 +28,9 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/YankRing.vim'
 
 " insert: complete
-Plug 'davidhalter/jedi-vim'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'davidhalter/jedi-vim'
 Plug 'hynek/vim-python-pep8-indent'
 
 " insert: snippets
@@ -49,7 +49,7 @@ Plug 'inkarkat/vim-mark'
 Plug 'justinmk/vim-sneak'
 
 " version_control
-Plug 'ludovicchabant/vim-lawrencium'  " disabled cuz of problem with airline
+"Plug 'ludovicchabant/vim-lawrencium'  " disabled cuz of problem with airline
 
 " code_check
 Plug 'tell-k/vim-autopep8'
