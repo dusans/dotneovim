@@ -1,8 +1,5 @@
 call plug#begin('~/AppData/Local/nvim/plugged')
 
-" start
-Plug 'mhinz/vim-startify'
-
 " status and tab line
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -11,8 +8,6 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'cschlueter/vim-wombat'
 
 " visual: syntax
-Plug 'jdevera/vim-stl-syntax'
-Plug 'dzeban/vim-log-syntax'
 Plug 'hdima/python-syntax'
 Plug 'ingydotnet/yaml-vim'
 
@@ -47,9 +42,6 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'inkarkat/vim-ingo-library'  " vim-mark depends on it
 Plug 'inkarkat/vim-mark'
 Plug 'justinmk/vim-sneak'
-
-" version_control
-"Plug 'ludovicchabant/vim-lawrencium'  " disabled cuz of problem with airline
 
 " code_check
 Plug 'tell-k/vim-autopep8'

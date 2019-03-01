@@ -7,23 +7,12 @@ let g:UltiSnipsSnippetDirectories=["UltiSnips", "ultisnips_my"]
 nnoremap <F7> :call LoadUltisnips()<cr>:call UltiSnips_ListSnippets()<CR>
 inoremap <F7> <esc>:call LoadUltisnips()<cr>a<c-r>=UltiSnips_ExpandSnippet()<cr>
 
-" == startify ==
-map <Leader>s :Startify<CR>
-let g:startify_custom_indices = ['a', 'd', 'f', 'l', 'w', 'o', 'm', 'h', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-let g:startify_bookmarks = [ '$NEOVIM_MY/init.vim']
-"let g:startify_custom_header = []
-let g:startify_files_number        = 8
-let g:startify_enable_special      = 0
-
-let g:startify_session_persistence = 1
-let g:startify_session_autoload    = 1
-let g:startify_session_dir = '$NEOVIM_MY/sessions'
-
-map <F12> :SSave
-map <S-F12> :SLoad
+" == session ==
+map <F12> :mksession! $NEOVIM_MY/sessions/
+map <S-F12> :source $NEOVIM_MY/sessions/
 
 map <Leader>ss :mksession! $NEOVIM_MY/sessions/def.vim<CR>
-map <F5> :SLoad def.vim<CR><Esc>:call GuiWindowFullScreen(1)<CR><CR>
+map <F5> :source $NEOVIM_MY/sessions/def.vim<CR><Esc>:call GuiWindowFullScreen(1)<CR><CR>
 
 " == rainbow ==
 let g:rainbow#max_level = 8
