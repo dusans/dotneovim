@@ -2,6 +2,9 @@ set runtimepath^=$VIM
 set runtimepath^=$VIMRUNTIME
 let &packpath = &runtimepath
 
+" ================ python ================
+let g:python_host_prog = expand('$PY27_64_CONDA\python.exe')
+let g:python3_host_prog = expand('$PY37_64_CONDA\python.exe')
 
 " ================ plugins_install ================
 source $NEOVIM_MY/plugins_install.vim
@@ -19,9 +22,6 @@ set autochdir
 " == default, windows ==
 source $VIMRUNTIME/mswin.vim
 behave mswin
-
-let g:python_host_prog = '$PY27_64_CONDA\python.exe'
-let g:python3_host_prog = '$PY37_64_CONDA\python.exe'
 
 " == session ==
 set sessionoptions+=resize,winpos
