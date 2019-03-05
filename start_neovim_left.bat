@@ -16,7 +16,7 @@ REM add NEOVIM\bin for windows clipboard support
 set PATH=%PATH%;%NEOVIM%\bin
 
 REM ==== START ====
-start %NEOVIM%\bin\nvim-qt.exe --maximized
+start %NEOVIM%\bin\nvim-qt-left.exe --maximized
 
 popd
 endlocal
