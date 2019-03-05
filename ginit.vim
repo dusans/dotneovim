@@ -1,4 +1,4 @@
-Guifont! Consolas:h10
+Guifont! Consolas:h9
 
 " Disable the gui autocomplete pop-up and use the build in
 GuiPopupmenu 0
