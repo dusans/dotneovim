@@ -8,8 +8,11 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'cschlueter/vim-wombat'
 
 " visual: syntax
-Plug 'hdima/python-syntax'
+Plug 'vim-python/python-syntax'
 Plug 'ingydotnet/yaml-vim'
+
+" visual: fold
+Plug 'tmhedberg/SimpylFold'  " No-BS Python code folding for Vim
 
 " visual: help
 Plug 'nathanaelkane/vim-indent-guides'
@@ -21,6 +24,7 @@ Plug 'kshenoy/vim-signature'  " plugin to place, toggle and display marks.
 Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/YankRing.vim'
+Plug 'wellle/targets.vim'  " additional text objects
 
 " insert: complete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -42,6 +46,7 @@ Plug 'tacahiroy/ctrlp-funky'
 Plug 'inkarkat/vim-ingo-library'  " vim-mark depends on it
 Plug 'inkarkat/vim-mark'
 Plug 'justinmk/vim-sneak'
+Plug 'nelstrom/vim-visual-star-search'  " allows * and # searches on the current visual selection.
 
 " code_check
 Plug 'tell-k/vim-autopep8'

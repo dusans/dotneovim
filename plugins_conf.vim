@@ -136,6 +136,7 @@ let g:autopep8_ignore="W690,E309"
 
 " == syntax-python ==
 let python_highlight_all = 1
+let g:python_version_2 = 1  " for: vim-python/python-syntax
 
 " == textobj_python ==
 nnoremap <silent> ]c :call search('^\s*\zsclass ', 'W')<CR>
