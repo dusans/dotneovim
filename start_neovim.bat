@@ -18,7 +18,7 @@ REM add Python\Scripts for autopep8
 set PATH=%PATH%;%PY27_64_CONDA%\Scripts
 
 REM ==== START ====
-start %NEOVIM%\bin\nvim-qt.exe --maximized
+start %NEOVIM%\bin\nvim-qt.exe --maximized --no-ext-tabline
 
 popd
 endlocal

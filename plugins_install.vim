@@ -12,7 +12,7 @@ Plug 'vim-python/python-syntax'
 Plug 'ingydotnet/yaml-vim'
 
 " visual: fold
-Plug 'tmhedberg/SimpylFold'  " No-BS Python code folding for Vim
+"Plug 'tmhedberg/SimpylFold'  " No-BS Python code folding for Vim
 
 " visual: help
 Plug 'nathanaelkane/vim-indent-guides'
@@ -26,7 +26,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'wellle/targets.vim'  " additional text objects
 
-" insert: complete
+" insert: autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'deoplete-plugins/deoplete-jedi'
 Plug 'davidhalter/jedi-vim'
