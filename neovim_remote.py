@@ -7,20 +7,20 @@ import pynvim
 def find_proc(name):
     procs = []
     for p in psutil.process_iter():
-        if p.name() == name:
+        if p.name().lower() == name.lower():
             procs.append(p)
+            break
     return procs
 
 
 def get_nvim_address(name):
     proc = list(find_proc(name))
-    assert len(proc) < 2
-    nvim_qt = proc[0]
-    nvim_proc = nvim_qt.children()[0]
-
-    nvim_listen_address = nvim_proc.environ()['NVIM_LISTEN_ADDRESS']
-    # port = nvim_listen_address.split('-')[1]
-    return nvim_listen_address
+    if proc:
+        nvim_qt = proc[0]
+        nvim_proc = nvim_qt.children()[0]
+        nvim_listen_address = nvim_proc.environ()['NVIM_LISTEN_ADDRESS']
+        return nvim_listen_address
+    return None
 
 
 def get_nvim(name='nvim-qt.exe'):
