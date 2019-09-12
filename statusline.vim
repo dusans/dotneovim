@@ -12,6 +12,8 @@ let g:airline#extensions#tabline#show_splits = 0
  " buffers names with similar filename, suppressing common parts of paths.
 let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
+let g:airline#extensions#wordcount#enabled = 0
+
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
