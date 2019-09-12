@@ -110,6 +110,9 @@ let g:ale_python_flake8_options = "--ignore=E501,E265,W503"
 
 " dont lint while typing
 let g:ale_lint_on_text_changed = 'never'
+let g:ale_lint_on_insert_leave = 0
+" dont run linters when opening a file
+let g:ale_lint_on_enter = 0
 
 let g:ale_sign_error = '>'
 let g:ale_sign_warning = '-'
