@@ -54,6 +54,6 @@ Plug 'w0rp/ale'
 
 " special
 Plug 'tpope/vim-repeat'
-Plug 'dusans/vim-hardmode', { 'branch': 'hjkl-repeat' }
+" Plug 'dusans/vim-hardmode', { 'branch': 'hjkl-repeat' }
 
 call plug#end()

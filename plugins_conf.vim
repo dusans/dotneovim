@@ -154,3 +154,19 @@ onoremap <silent> [f :call search('^\s*\zsdef ', 'bW')<CR>
 " == fullscreen ==
 map <F11> <Esc>:call GuiWindowFullScreen(1)<CR>
 map <S-F11> <Esc>:call GuiWindowFullScreen(0)<CR>
+
+" == mark ==
+"let g:mwDefaultHighlightingPalette = "extended"
+
+map <M-1> <Plug>MarkSearchGroup1Next
+map <M-2> <Plug>MarkSearchGroup2Next
+map <M-3> <Plug>MarkSearchGroup3Next
+map <M-4> <Plug>MarkSearchGroup4Next
+map <M-5> <Plug>MarkSearchGroup5Next
+map <M-6> <Plug>MarkSearchGroup6Next
+
+"let g:mwDefaultHighlightingNum = 9
+"let g:mwDirectGroupJumpMappingNum = 9
+"map <M-7> <Plug>MarkSearchGroup7Next
+"map <M-8> <Plug>MarkSearchGroup8Next
+"map <M-9> <Plug>MarkSearchGroup9Next
