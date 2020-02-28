@@ -10,6 +10,7 @@ Plug 'cschlueter/vim-wombat'
 " visual: syntax
 Plug 'vim-python/python-syntax'
 Plug 'ingydotnet/yaml-vim'
+Plug 'martinda/Jenkinsfile-vim-syntax'
 
 " visual: fold
 "Plug 'tmhedberg/SimpylFold'  " No-BS Python code folding for Vim
@@ -25,6 +26,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'vim-scripts/YankRing.vim'
 Plug 'wellle/targets.vim'  " additional text objects
+Plug 'ntpeters/vim-better-whitespace'
 
 " insert: autocomplete
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -54,6 +56,7 @@ Plug 'w0rp/ale'
 
 " special
 Plug 'tpope/vim-repeat'
+Plug 'dstein64/vim-startuptime'
 " Plug 'dusans/vim-hardmode', { 'branch': 'hjkl-repeat' }
 
 call plug#end()

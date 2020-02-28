@@ -16,16 +16,6 @@ function MyDiff()
   silent execute '!' . cmd . ' ' . opt . arg1 . ' ' . arg2 . ' > ' . arg3 . eq
 endfunction
 
-" == strip ==
-function! StripTrailingWhitespaces()
-    let l = line(".")
-    let c = col(".")
-    %s/\s\+$//e
-    call cursor(l, c)
-endfunction
-
-" call strip on BufWritePre
-autocmd FileType c,cpp,cs,java,php,ruby,python,yaml,vim autocmd BufWritePre <buffer> :call StripTrailingWhitespaces()
 
 " == open large file ==
 let g:LargeFileLimit = 1024 * 1024 * 50 " 50 MB
@@ -47,6 +37,8 @@ endif
 function Interpolate(p, fro, to)
     return a:fro + a:p * (a:to - a:fro)
 endfunction
+
+" CursorLineNr is global. Issue to make it local: https://github.com/neovim/neovim/pull/6597
 
 function UpdateCursorLineNrColor()
     let endLNr = line('$')

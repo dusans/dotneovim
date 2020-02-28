@@ -59,6 +59,9 @@ set lines=40 columns=150
 " spacing between lines
 set linespace=0
 
+" width of sign column
+set signcolumn=yes:1
+
 " == width ==
 set textwidth=79
 set colorcolumn=81
@@ -203,8 +206,7 @@ map gm :call cursor(0, len(getline('.'))/2)<CR>
 
 " == execute ==
 " Start Terminal
-map <Leader>st :let @+ = "python " . expand("%:t")<CR><bar>:!start ConEmu64.exe /Single /cmd {pycmd} -k "cd %:p:h"<CR>
-map <Leader>scmd :let @+ = "python " . expand("%:t")<CR><bar>:!start ConEmu64.exe /Single /cmd {cmd} "%:p:h"<CR>
+map <Leader>st :let @+ = "python " . expand("%:t")<CR><bar>:!start ConEmu64.exe /Single /cmd {cmd}<CR><CR>
 
 " == diff ==
 map <Leader>dt :windo diffthis<CR>

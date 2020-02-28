@@ -123,6 +123,9 @@ let g:ale_echo_msg_format = '[%linter%] [%severity%]: %s '
 
 let g:airline#extensions#ale#enabled = 1
 
+" a message will be shown when a cursor is near a warning or error. 
+" let g:ale_virtualtext_cursor = 1
+
 " = remap =
 "map <Leader>se :Errors<CR>
 nmap <silent> <M-9> <Plug>(ale_previous_wrap)
@@ -170,3 +173,10 @@ map <M-6> <Plug>MarkSearchGroup6Next
 "map <M-7> <Plug>MarkSearchGroup7Next
 "map <M-8> <Plug>MarkSearchGroup8Next
 "map <M-9> <Plug>MarkSearchGroup9Next
+
+" == vim-better-whitespace ==
+let g:strip_whitespace_on_save = 1
+let g:strip_whitespace_confirm=0
+
+autocmd FileType c,cpp,cs,java,php,ruby,python,yaml,vim EnableStripWhitespaceOnSave
+

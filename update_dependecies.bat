@@ -10,6 +10,10 @@ rem ###########################################################
 rem %PY27_64_CONDA%\Scripts\pip install ipdb --upgrade
 rem %PY27_64_CONDA%\Scripts\pip install pylint==1.9.4 --upgrade
 
+setlocal
+
+SET PATH=%PATH%;%PY37_64_CONDA%\Library\bin\;
+
 rem ###########################################################
 rem #### PY 37
 rem ###########################################################
@@ -19,6 +23,8 @@ rem ###########################################################
 %PY37_64_CONDA%\Scripts\pip install neovim --upgrade
 %PY37_64_CONDA%\Scripts\pip install pynvim --upgrade
 %PY37_64_CONDA%\Scripts\pip install psutil --upgrade
+
+endlocal
 
 rem %PY37_64_CONDA%\Scripts\pip install ipdb --upgrade
 rem %PY37_64_CONDA%\Scripts\pip install pylint --upgrade
