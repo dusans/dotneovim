@@ -238,7 +238,7 @@ set noshowmode
 autocmd BufEnter * set updatetime=4000
 
 " how many lines before/max current line to start syntax highlighting parsing
-autocmd Syntax * syn sync clear | syntax sync minlines=512 | syntax sync maxlines=512
+" autocmd Syntax * syn sync clear | syntax sync minlines=1024 | syntax sync maxlines=1024
 
 " Center screen on next/previous selection.
 nnoremap n nzz
