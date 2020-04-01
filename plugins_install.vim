@@ -52,7 +52,7 @@ Plug 'nelstrom/vim-visual-star-search'  " allows * and # searches on the current
 
 " code_check
 Plug 'tell-k/vim-autopep8'
-Plug 'w0rp/ale'
+Plug 'dense-analysis/ale'
 
 " special
 Plug 'tpope/vim-repeat'
