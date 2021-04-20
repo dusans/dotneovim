@@ -123,7 +123,7 @@ let g:ale_echo_msg_format = '[%linter%] [%severity%]: %s '
 
 let g:airline#extensions#ale#enabled = 1
 
-" a message will be shown when a cursor is near a warning or error. 
+" a message will be shown when a cursor is near a warning or error.
 " let g:ale_virtualtext_cursor = 1
 
 " = remap =
