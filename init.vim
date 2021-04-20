@@ -64,7 +64,7 @@ highlight DiffText cterm=none ctermfg=black ctermbg=Magenta gui=none guibg=#0000
 "guifg=white
 
 " == font ==
-set lines=40 columns=150
+"set lines=40 columns=150
 " spacing between lines
 set linespace=0
 
