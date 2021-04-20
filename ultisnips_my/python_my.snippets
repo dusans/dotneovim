@@ -1,6 +1,10 @@
- 
+
 snippet i "Set ipdb trace aka breakpoint" b
 import ipdb; ipdb.set_trace()
+endsnippet
+
+snippet ipt "Set ptpython.ipython embed aka breakpoint" b
+from ptpython.ipython import embed; embed(vi_mode=True)
 endsnippet
 
 snippet traceback "print the full traceback when an exception happens" b
