@@ -1,4 +1,4 @@
-call plug#begin('~/AppData/Local/nvim/plugged')
+call plug#begin(expand('$NEOVIM_MY/plugged'))
 
 " status and tab line
 Plug 'vim-airline/vim-airline'
