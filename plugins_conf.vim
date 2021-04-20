@@ -12,7 +12,8 @@ map <F12> :mksession! $NEOVIM_MY/sessions/
 map <S-F12> :source $NEOVIM_MY/sessions/
 
 map <Leader>ss :mksession! $NEOVIM_MY/sessions/def.vim<CR>
-map <F5> :source $NEOVIM_MY/sessions/def.vim<CR><Esc>:call GuiWindowFullScreen(1)<CR><CR>
+map <F5> :source $NEOVIM_MY/sessions/def.vim<CR><Esc><CR>
+map <F6> :source $NEOVIM_MY/sessions/def.vim<CR><Esc>:call GuiWindowFullScreen(1)<CR><CR>
 
 " == rainbow ==
 let g:rainbow#max_level = 8
