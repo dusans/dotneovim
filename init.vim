@@ -1,10 +1,14 @@
-set runtimepath^=$VIM
-set runtimepath^=$VIMRUNTIME
-let &packpath = &runtimepath
+if has('win32')
+    set runtimepath^=$VIM
+    set runtimepath^=$VIMRUNTIME
+    let &packpath = &runtimepath
+endif
 
 " ================ python ================
-let g:python_host_prog = expand('$PY27_64_CONDA\python.exe')
-let g:python3_host_prog = expand('$PY37_64_CONDA\python.exe')
+if has('win32')
+    let g:python_host_prog = expand('$PY27_64_CONDA\python.exe')
+    let g:python3_host_prog = expand('$PY37_64_CONDA\python.exe')
+endif
 
 " ================ plugins_install ================
 source $NEOVIM_MY/plugins_install.vim
@@ -20,8 +24,10 @@ set encoding=utf-8
 set autochdir
 
 " == default, windows ==
-source $VIMRUNTIME/mswin.vim
-behave mswin
+if has('win32')
+    source $VIMRUNTIME/mswin.vim
+	behave mswin
+endif
 
 " == session ==
 set sessionoptions+=resize,winpos
@@ -64,7 +70,9 @@ set signcolumn=yes:1
 
 " == width ==
 set textwidth=79
-set colorcolumn=81
+if has('win32')
+    set colorcolumn=81
+endif
 hi ColorColumn guibg=#292929
 set formatoptions+=t
 
@@ -116,6 +124,7 @@ nmap // :nohlsearch<cr>
 " == number ==
 set numberwidth=3
 set number
+set relativenumber
 setglobal relativenumber
 
 " ================ remaps ================
@@ -198,9 +207,13 @@ inoremap <A-h> <left>
 inoremap <A-l> <right>
 inoremap <A-j> <down>
 inoremap <A-k> <up>
-" mswin.vim remaps <C-y>.
-" I want the normal <C-y> that moves screen down one line
-unmap <C-y>
+
+if has('win32')
+    " mswin.vim remaps <C-y>.
+    " I want the normal <C-y> that moves screen down one line
+    unmap <C-y>
+endif
+
 " move to middle of current line
 map gm :call cursor(0, len(getline('.'))/2)<CR>
 
