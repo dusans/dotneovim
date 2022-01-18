@@ -1,0 +1,15 @@
+.bash_profile:
+    # Get the aliases and functions
+    if [ -f ~/.bashrc ]; then
+        . ~/.bashrc
+    fi
+
+    # User specific environment and startup programs
+    export NEOVIM_MY=$HOME/.config/nvim
+
+execute:
+    python2 -m pip install --user pynvim --upgrade
+    python3 -m pip install --user pynvim --upgrade
+
+    python2 -m pip install --user msgpack --upgrade
+    python3 -m pip install --user msgpack --upgrade
