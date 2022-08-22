@@ -7,7 +7,7 @@ endif
 " ================ python ================
 if has('win32')
     let g:python_host_prog = expand('$PY27_64_CONDA\python.exe')
-    let g:python3_host_prog = expand('$PY37_64_CONDA\python.exe')
+    let g:python3_host_prog = expand('$PY3_CONDA\python.exe')
 else
     let g:python_host_prog = '/usr/bin/python2'
     let g:python3_host_prog = '/usr/bin/python3'

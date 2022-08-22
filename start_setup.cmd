@@ -12,6 +12,6 @@ set PATH=%PATH%;%MSYS64%\mingw64\bin
 REM add NEOVIM\bin: for windows clipboard support
 set PATH=%PATH%;%NEOVIM%\bin
 REM add Python\Scripts: for autopep8
-set PATH=%PATH%;%PY27_64_CONDA%\Scripts
-REM add NEOVIM_MY for: flake8_py27.bat
+set PATH=%PATH%;%PY3_CONDA%\Scripts
+REM add NEOVIM_MY for: flake8_py3.bat
 set PATH=%PATH%;%NEOVIM_MY%

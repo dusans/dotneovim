@@ -103,7 +103,7 @@ autocmd VimEnter,BufNewFile,BufReadPost * silent! call HardMode()
 let g:ale_linters = {
 \  'python':        ['flake8'],
 \}
-let g:ale_python_flake8_executable = "flake8_py27.bat"
+let g:ale_python_flake8_executable = "flake8_py3.bat"
 "E501 - line too long (82 characters)
 "E265 - Fix spacing after comment hash for block comments.
 "W503 - Line break occurred before a binary operator
