@@ -18,8 +18,7 @@ def get_nvim_address(name):
     if proc:
         nvim_qt = proc[0]
         nvim_proc = nvim_qt.children()[0]
-        nvim_listen_address = nvim_proc.environ()['NVIM_LISTEN_ADDRESS']
-        return nvim_listen_address
+        return "\\\\.\\pipe\\nvim-%s-0" % nvim_proc.pid
     return None
 
 
