@@ -3,6 +3,11 @@ set completeopt-=preview
 " auto select feature
 set completeopt+=noinsert
 
+" == yaml ==
+" if we don't set this we get from ftplugin/yaml.vim
+" setlocal shiftwidth=2 softtabstop=2
+let g:yaml_recommended_style=0
+
 " == Enable deoplete ==
 let g:deoplete#enable_at_startup = 1
 
