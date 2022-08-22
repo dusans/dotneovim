@@ -46,6 +46,10 @@ colorscheme wombat
 set background=dark
 hi Search guibg=Orange2
 
+" search pattern: the first match gets highlighted.
+" when typing the replacement field, the document is modified live.
+set inccommand=nosplit
+
 " current curson color
 "hi CursorLine guibg=#1B1B1B
 "hi CursorLine guibg=#121212
