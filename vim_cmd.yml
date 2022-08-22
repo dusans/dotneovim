@@ -1,0 +1,8 @@
+spell:
+    If you’re using Vim to write code and prose, you might want to turn spell
+    checking on only in the local buffer. To do that, use:
+
+        setlocal spell spelllang=en_us
+
+    disable:
+        set nospell
